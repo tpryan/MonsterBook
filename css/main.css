@@ -1,0 +1,85 @@
+body{
+			margin: 0 auto;
+			max-width: 768px;
+			font-family: "Fanwood";
+			font-size: 35px;
+			padding: 60px 20px 50px 20px;
+			line-height: 2;
+
+
+			background-image: linear-gradient(top, rgb(181,230,208) 0%, rgb(255,255,255) 15%, rgb(255,255,255) 80%);
+			background-image: -webkit-linear-gradient(top, rgb(181,230,208) 0%, rgb(255,255,255) 15%, rgb(255,255,255) 80%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, rgb(181,230,208)),
+				color-stop(0.15, rgb(255,255,255)),
+				color-stop(0.8, rgb(255,255,255))
+			);
+			background-repeat: no-repeat;
+
+		}
+
+		#container{
+			text-align:justify;
+			-webkit-hyphens:auto;
+			
+			/* flow the content inside this element */
+			-webkit-wrap-shape-mode: content;
+
+		}	
+		
+		.exclusion{
+			position:relative;
+			
+			/* flow text around this element */
+			-webkit-wrap-shape-mode: left;
+
+			/* display the shape outline */
+			/*-webkit-render-wrap-shape: auto;*/
+		}
+
+		#exclusion1{
+			top:290px;
+			left:350px;
+		}
+
+		.monster{
+		/* shape the element as a heart */
+		-webkit-wrap-shape: polygon(0px, 98px
+									114px, 15px 
+									280px, 15px
+									350px, 153px
+									420px, 211px
+									420px, 250px
+									410px, 230px
+									131px, 280px
+									0px, 153px 
+									0px, 108px);
+
+		}
+
+	#img{
+		position: absolute;
+		top:0;
+		left:0;
+	}
+
+	p:first-child:first-letter { 
+		float: left; 
+		color: #FFFFFF; 
+		font-size: 120px; 
+		line-height: 120px; 
+		padding-top: 15px; 
+		padding-right: 8px; 
+		padding-left: 3px;
+		background-color: #43886a;
+		border: 3px solid silver;
+		margin-right: 15px;
+		margin-top: 20px;  
+
+
+
+	}

@@ -3,86 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Monster</title>
-
-	<style type="text/css">
-		
-
-		body{
-			margin: 0 auto;
-			max-width: 768px;
-			font-family: "Fanwood";
-			font-size: 40px;
-			padding: 60px 20px 50px 20px;
-			line-height: 1.9;
-		}
-
-		#container{
-			text-align:justify;
-			-webkit-hyphens:auto;
-			
-			/* flow the content inside this element */
-			-webkit-wrap-shape-mode: content;
-
-		}	
-		
-		.exclusion{
-			position:relative;
-			
-			/* flow text around this element */
-			-webkit-wrap-shape-mode: left;
-
-			/* display the shape outline */
-			/*-webkit-render-wrap-shape: auto;*/
-		}
-
-		#exclusion1{
-			top:270px;
-			left:350px;
-		}
-
-		.monster{
-		/* shape the element as a heart */
-		-webkit-wrap-shape: polygon(0px, 98px
-									114px, 15px 
-									280px, 15px
-									350px, 153px
-									420px, 211px
-									420px, 250px
-									410px, 230px
-									131px, 280px
-									0px, 153px 
-									0px, 108px);
-
-		}
-
-	#img{
-		position: absolute;
-		top:0;
-		left:0;
-	}
-
-
-
-	
-
-	</style>
-
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-<div id="workspace">
-		
 		<div id="exclusion1" class="exclusion monster">
 			<img id="img" src="images/monsterangry.png" > 
 		</div>
 		<div id="container">
-			<p>Many years ago there lived a monster.  He was a very scary monster. 
+			<p>Many years ago there lived a monster.  
+				He was a very scary monster. 
 				People were afraid of him.</p>
-				<p> 
-				They were afraid of him because he looked angry all the time. 
+			<p>They were afraid of him because he looked angry all the time. 
 				The monster looked angry all the time because he <strong>was</strong> angry all the time. 
 				He was angry all the time because people were afraid of him.</p> 
-				  <p>It was a big viscous circle.</p>
+			<p>It was a big viscous circle.</p>
 		</div>
-</div>
 </body>
 </html>	
