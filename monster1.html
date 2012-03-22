@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Monster</title>
+
+	<style type="text/css">
+		body{
+			font-family: "Fanwood";
+			font-size: 35px;
+		}
+
+		#container{
+			text-align:justify;
+			-webkit-hyphens:auto;
+			
+			/* flow the content inside this element */
+			-webkit-wrap-shape-mode: content;
+		}	
+		
+		.exclusion{
+			position:absolute;
+			
+			/* flow text around this element */
+			-webkit-wrap-shape-mode: around;
+
+			/* display the shape outline */
+			/*-webkit-render-wrap-shape: auto;*/
+		}
+
+		#exclusion1{
+			top:100px;
+			left:200px;
+		}
+
+		.monster{
+		/* shape the element as a heart */
+		-webkit-wrap-shape: polygon(0px, 98px
+									114px, 15px 
+									280px, 15px
+									350px, 153px
+									420px, 211px
+									420px, 250px
+									410px, 230px
+									131px, 280px
+									0px, 153px 
+									0px, 108px);
+
+		}
+
+	#img{
+		position: absolute;
+		top:0;
+		left:0;
+	}	
+
+	</style>
+
+</head>
+<body>
+<div id="workspace">
+		<div id="exclusion1" class="exclusion monster">
+			<img id="img" src="images/monster/monster.png" > 
+		</div>		
+		<div id="container">
+			<p>Many years ago, there lived a monster.  He was a very scary monster and people were afraid of him. </p>
+		</div>	
+</div>
+</body>
+</html>	
