@@ -5,9 +5,15 @@
 	<title>Monster</title>
 
 	<style type="text/css">
+		
+
 		body{
+			margin: 0 auto;
+			max-width: 768px;
 			font-family: "Fanwood";
-			font-size: 35px;
+			font-size: 40px;
+			padding: 60px 20px 50px 20px;
+			line-height: 1.9;
 		}
 
 		#container{
@@ -16,21 +22,22 @@
 			
 			/* flow the content inside this element */
 			-webkit-wrap-shape-mode: content;
+
 		}	
 		
 		.exclusion{
-			position:absolute;
+			position:relative;
 			
 			/* flow text around this element */
-			-webkit-wrap-shape-mode: around;
+			-webkit-wrap-shape-mode: left;
 
 			/* display the shape outline */
 			/*-webkit-render-wrap-shape: auto;*/
 		}
 
 		#exclusion1{
-			top:100px;
-			left:200px;
+			top:270px;
+			left:350px;
 		}
 
 		.monster{
@@ -52,19 +59,30 @@
 		position: absolute;
 		top:0;
 		left:0;
-	}	
+	}
+
+
+
+	
 
 	</style>
 
 </head>
 <body>
 <div id="workspace">
+		
 		<div id="exclusion1" class="exclusion monster">
-			<img id="img" src="images/monster/monster.png" > 
-		</div>		
+			<img id="img" src="images/monsterangry.png" > 
+		</div>
 		<div id="container">
-			<p>Many years ago, there lived a monster.  He was a very scary monster and people were afraid of him. </p>
-		</div>	
+			<p>Many years ago there lived a monster.  He was a very scary monster. 
+				People were afraid of him.</p>
+				<p> 
+				They were afraid of him because he looked angry all the time. 
+				The monster looked angry all the time because he <strong>was</strong> angry all the time. 
+				He was angry all the time because people were afraid of him.</p> 
+				  <p>It was a big viscous circle.</p>
+		</div>
 </div>
 </body>
 </html>	
